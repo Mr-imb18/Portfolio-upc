@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#menu.hidden {
+    display: none; 
+}
+ 
+#menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+.carre {
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+nav {
+    background-color: #1a1a2e;
+}
+nav div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1a1a2e;
+    padding: 10px; 
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+#introduction {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #162447;
+    font-family: "Merienda", serif;
+    text-shadow: 5px 5px 10px black;
+}
+
+#introduction h1, #introduction h2 {
+    margin: 10px 0;
+}
+
+#introduction input[type="button"] {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#introduction input[type="button"]:hover {
+    background-color: #0077cc;
+}
+#ap {
+    background-image: url('b.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+#PROJET {
+    background-image: url('a.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+#CONTACT {
+    background-color: #1a1a2e;
+    padding: 30px;
+    text-align: center;
+}
+
+#CONTACT a {
+
+    text-decoration: none;
+}
+
+#CONTACT a:hover {
+    cursor: pointer;
+}
+@media (max-width: 996px) {
+    .div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu-toggle {
+        display: block;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carre {
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 35px; 
+    }
+
+    #introduction img {
+        width: 100%;
+        height: auto;
+    }
+
+    #ap, #PROJET, #CONTACT {
+        padding: 30px 10px; 
+    }
+
+    .project {
+        padding: 15px;
+    } 
+}
